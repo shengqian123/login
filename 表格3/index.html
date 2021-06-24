@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="content-style-type" content="text/css" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>华东政法大学教务管理系统</title>
+		<script src="https://jwxt.ecupl.edu.cn/static/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://jwxt.ecupl.edu.cn/static/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://jwxt.ecupl.edu.cn/static/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link href="https://jwxt.ecupl.edu.cn/static/openurp/0.0.2/css/nav.css?v=2" rel="stylesheet" type="text/css" />
+		<script src="https://jwxt.ecupl.edu.cn/static/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://jwxt.ecupl.edu.cn/static/openurp/0.0.2/js/nav.js?v=3" type="text/javascript"></script>
+		<script src="https://jwxt.ecupl.edu.cn/static/layer/3.1.1/dist/layer.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" style="margin-bottom: 0px;">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" id="toggleButton" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<img src="https://jwxt.ecupl.edu.cn/static/local/default/images/logo.png" style="width:50px;height:50px;float: left !important;" />
+					<a class="navbar-brand" href="#">
+						华东政法大学<span class="appName" id="appName"></span>
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+							<ul id="app_nav_bar" class="dropdown-menu"></ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav" id="menu_nav_bar"></ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true">192125010100(侯佳辰)</span></a>
+						</li>
+						<li>
+							<a href="#" target="_top"><span class="glyphicon glyphicon-log-out" aria-hidden="true">退出&nbsp;&nbsp;</span></a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<table id="mainTable" style="width:100%;">
+			<tr>
+				<td id="leftTD" valign="top">
+					<div id="menu_panel">
+						<ul class="menu collapsible" id="menu_ul"></ul>
+					</div>
+				</td>
+				<td style="height:100%;width:5px">
+					<div id="_menu_folder">
+						<div id="_menu_folder_tri"></div>
+					</div>
+				</td>
+				
+				
+				<td id="rightTD" valign="top" style="padding-left: 0px;">
+					<div id="#document">
+						
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <title>华东政法大学教学管理信息系统</title>
+  <link href="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/css/default.css?v=20180419" rel="stylesheet" type="text/css">
+  <link href="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/css/messages.css" rel="stylesheet" type="text/css">
+  <link href="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/css/toolBar.css?v=20180419" rel="stylesheet" type="text/css">
+ <script type="text/javascript">var static_base='https://jwxt.ecupl.edu.cn/static';</script>
+ <script type="text/javascript" src="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/scripts/StringUtils.js?ver=20120518"></script>
+ <script type="text/javascript" src="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/scripts/common/Common.js?v=5"></script>
+ <script type="text/javascript" src="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/scripts/common/Table.js?v=20180414"></script>
+ <script type="text/javascript" src="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/scripts/common/ToolBar.js?v=20180419"></script>
+ <script type="text/javascript" src="https://jwxt.ecupl.edu.cn/static/my97/4.8/WdatePicker.js"></script>
+ <script type="text/javascript" src='dwr/engine.js?v=302'></script>
+ <script type="text/javascript" src='dwr/util.js?v=302'></script>
+ <script type="text/javascript" src="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/scripts/prototypes.js"></script>
+ <script type="text/javascript" src="https://jwxt.ecupl.edu.cn/static/eams/2.5.3/scripts/Menu.js"></script>
+ <script type="text/javascript">
+     var f_frameStyleResize = function (targObj,extraHight){
+      if(document.readyState != "complete"){
+        setTimeout(function(){f_frameStyleResize(targObj,extraHight);},500);
+        return ;
+      }
+      if(targObj.name!=""){
+         var frames = targObj.parent.document.getElementsByName(targObj.name);
+         if(frames.length<1) return;
+         var targWin=frames[0];
+         if(targWin != null) {
+         var HeightValue = targObj.document.body.scrollHeight;
+         if(null==extraHight){
+            extraHight=0;
+         }
+         var d=targObj.document.body.clientHeight
+         if(HeightValue+extraHight > targObj.document.body.clientHeight){
+           targWin.style.height = (HeightValue+extraHight)+"px";
+         }
+      }
+      targObj.parent.f_frameStyleResize(targObj.parent);
+    }
+  }
+ try{
+ if (window.addEventListener) {window.addEventListener("DOMContentLoaded", adaptFrameSize, false); }else if (window.attachEvent) {window.attachEvent("onload", adaptFrameSize);}else {window.onload = adaptFrameSize;}
+ }catch(e){}
+ </script>
+ </head>
+<body>
+	
+	<table id="gradeBar">
+		
+	</table>
+ 	<div align="center">学号:192125010100 姓名:侯佳辰 院系所:国际法学院 专业:法学 专业方向:国际经济法方向</div>
+   <table class=listTable width="90%" align="center" >
+   <tr align="center" class="darkColumn" >   <td name="attr.year2year">学年度</td>
+   <td name="attr.term">学期</td>
+   <td name="std.grade.courseNumber">门数</td>
+   <td name="std.totalCredit">总学分</td>
+   <td name="grade.avgPoints">平均绩点</td>
+</tr>
+    <tbody>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">     	<td>2019-2020</td>
+     	<td>1</td>
+     	<td>15</td>
+     	<td>30</td>
+     	<td>  3.66
+</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">     	<td>2019-2020</td>
+     	<td>2</td>
+     	<td>13</td>
+     	<td>25</td>
+     	<td>  3.06
+</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">     	<td>2020-2021</td>
+     	<td>1</td>
+     	<td>14</td>
+     	<td>32</td>
+     	<td>  3.02
+</td>
+</tr>
+  </tbody>
+   	<tr align="center">
+     	<td colspan="2">在校汇总</td>
+     	<td>41</td>
+     	<td>87</td>
+     	<td>  3.25
+</td>
+   	</tr>
+  </table>
+   <table class=listTable width="90%" id="gradeTable" align="center" >
+   <tr align="center" class="darkColumn" >   <td name="attr.courseNo">课程代码</td>
+   <td name="attr.taskNo">课程序号</td>
+   <td name="attr.courseName">课程名称</td>
+   <td name="entity.courseType">课程类别</td>
+   <td name="attr.credit">学分</td>
+   <td text="平时成绩">平时成绩</td>
+   <td text="期末成绩">期末成绩</td>
+   <td text="补考成绩">补考成绩</td>
+   <td name="grade.finalScore">最终成绩</td>
+   <td name="attr.gradePoint">绩点</td>
+   <td name="attr.yearTerm">学年学期</td>
+</tr>
+    <tbody>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1000091</td>
+	   	<td>1099</td>
+	   	<td>社会调查与公益劳动</td>
+	   	<td>实践课程</td>
+	   	<td>1</td>
+	    <td></td>
+	    <td>优</td>
+	    <td></td>
+	   	<td>优</td>
+	   	<td>4</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GCHI180312</td>
+	   	<td>0402</td>
+	   	<td>大航海时代的东西文化交流</td>
+	   	<td>当代中国与世界视野通识类</td>
+	   	<td>2</td>
+	    <td>优</td>
+	    <td>良</td>
+	    <td></td>
+	   	<td>优</td>
+	   	<td>4</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GLAW050442</td>
+	   	<td>0654</td>
+	   	<td>职务犯罪侦查实务</td>
+	   	<td>法治精神和专业养成通识类</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>90</td>
+	    <td></td>
+	   	<td>90</td>
+	   	<td>4</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>0040402</td>
+	   	<td>0098</td>
+	   	<td>英美证据法（英汉双语）</td>
+	   	<td>全校性公选课</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>92</td>
+	    <td></td>
+	   	<td>92</td>
+	   	<td>4</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>AB1082792</td>
+	   	<td>1769</td>
+	   	<td>人文英语视听说</td>
+	   	<td>大学英语及外语类模块课</td>
+	   	<td>2</td>
+	    <td>96</td>
+	    <td>95</td>
+	    <td></td>
+	   	<td>96</td>
+	   	<td>4</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1000099</td>
+	   	<td>0087</td>
+	   	<td>形势与政策</td>
+	   	<td>思想政治理论课</td>
+	   	<td>0</td>
+	    <td></td>
+	    <td>80</td>
+	    <td></td>
+	   	<td>80</td>
+	   	<td>3</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GINN180012</td>
+	   	<td>0603</td>
+	   	<td>证据发现与推理（限法学类专业）</td>
+	   	<td>创新思维与创业能力培育通识类</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>良</td>
+	    <td></td>
+	   	<td>良</td>
+	   	<td>3.5</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1020214</td>
+	   	<td>1075</td>
+	   	<td>民事诉讼法学</td>
+	   	<td>学科基础课</td>
+	   	<td>4</td>
+	    <td>86</td>
+	    <td>64</td>
+	    <td></td>
+	   	<td>77</td>
+	   	<td>2.7</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1040013</td>
+	   	<td>1083</td>
+	   	<td>国际公法</td>
+	   	<td>学科基础课</td>
+	   	<td>3</td>
+	    <td>90</td>
+	    <td>80</td>
+	    <td></td>
+	   	<td>85</td>
+	   	<td>3.3</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1150073</td>
+	   	<td>1059</td>
+	   	<td>马克思主义基本原理概论</td>
+	   	<td>思想政治理论课</td>
+	   	<td>3</td>
+	    <td>78</td>
+	    <td>78</td>
+	    <td></td>
+	   	<td>78</td>
+	   	<td>2.7</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1140151</td>
+	   	<td>0984</td>
+	   	<td>体育二（上）</td>
+	   	<td>文化基础课</td>
+	   	<td>1</td>
+	    <td></td>
+	    <td>99</td>
+	    <td></td>
+	   	<td>99</td>
+	   	<td>4</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1021243</td>
+	   	<td>0951</td>
+	   	<td>债权法学</td>
+	   	<td>学科基础课</td>
+	   	<td>3</td>
+	    <td>82</td>
+	    <td>50</td>
+	    <td></td>
+	   	<td>63</td>
+	   	<td>1.3</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1000131</td>
+	   	<td>0344</td>
+	   	<td>法律职业伦理</td>
+	   	<td>学科基础课</td>
+	   	<td>1</td>
+	    <td>89</td>
+	    <td>67</td>
+	    <td></td>
+	   	<td>78</td>
+	   	<td>2.7</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1020204</td>
+	   	<td>0955</td>
+	   	<td>刑法学分论</td>
+	   	<td>学科基础课</td>
+	   	<td>4</td>
+	    <td>89</td>
+	    <td>66</td>
+	    <td></td>
+	   	<td>78</td>
+	   	<td>2.7</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1021112</td>
+	   	<td>1089</td>
+	   	<td>外国法制史</td>
+	   	<td>专业主干课</td>
+	   	<td>2</td>
+	    <td>88</td>
+	    <td>50</td>
+	    <td></td>
+	   	<td>69</td>
+	   	<td>1.7</td>
+	   	<td>2020-2021 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GLAW040212</td>
+	   	<td>0154</td>
+	   	<td>外交法与当代世界</td>
+	   	<td>法治精神和专业养成通识类</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>优</td>
+	    <td></td>
+	   	<td>优</td>
+	   	<td>4</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1000099</td>
+	   	<td>0130</td>
+	   	<td>形势与政策</td>
+	   	<td>思想政治理论课</td>
+	   	<td>0</td>
+	    <td></td>
+	    <td>88</td>
+	    <td></td>
+	   	<td>88</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1140141</td>
+	   	<td>0652</td>
+	   	<td>体育一（下）</td>
+	   	<td>文化基础课</td>
+	   	<td>1</td>
+	    <td></td>
+	    <td>90</td>
+	    <td></td>
+	   	<td>90</td>
+	   	<td>4</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1083322</td>
+	   	<td>2217</td>
+	   	<td>大学英语视听说（法学类）四</td>
+	   	<td>大学英语及外语类模块课</td>
+	   	<td>2</td>
+	    <td>93</td>
+	    <td>94</td>
+	    <td></td>
+	   	<td>94</td>
+	   	<td>4</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1083312</td>
+	   	<td>0987</td>
+	   	<td>英语人文经典阅读 二</td>
+	   	<td>大学英语及外语类模块课</td>
+	   	<td>2</td>
+	    <td>97</td>
+	    <td>75</td>
+	    <td></td>
+	   	<td>86</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GSCI050232</td>
+	   	<td>2123</td>
+	   	<td>高科技犯罪影视案件剖析</td>
+	   	<td>科学思维与科技发展通识类</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>良</td>
+	    <td></td>
+	   	<td>良</td>
+	   	<td>3.5</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GLIF050012</td>
+	   	<td>1251</td>
+	   	<td>普通心理学</td>
+	   	<td>运动健康与生命教育通识类</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>92</td>
+	    <td></td>
+	   	<td>92</td>
+	   	<td>4</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1020073</td>
+	   	<td>1313</td>
+	   	<td>宪法学</td>
+	   	<td>学科基础课</td>
+	   	<td>3</td>
+	    <td>94</td>
+	    <td>66</td>
+	    <td></td>
+	   	<td>83</td>
+	   	<td>3.3</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GLAW180593</td>
+	   	<td>0207</td>
+	   	<td>逻辑</td>
+	   	<td>法治精神和专业养成通识类</td>
+	   	<td>3</td>
+	    <td>88</td>
+	    <td>61</td>
+	    <td></td>
+	   	<td>77</td>
+	   	<td>2.7</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GART010142</td>
+	   	<td>0219</td>
+	   	<td>影视鉴赏(中外影视作品赏析)</td>
+	   	<td>艺术修养与审美体验通识类</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>良</td>
+	    <td></td>
+	   	<td>良</td>
+	   	<td>3.5</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1020194</td>
+	   	<td>1245</td>
+	   	<td>刑法学总论</td>
+	   	<td>学科基础课</td>
+	   	<td>4</td>
+	    <td>89</td>
+	    <td>68</td>
+	    <td></td>
+	   	<td>79</td>
+	   	<td>2.7</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1021413</td>
+	   	<td>0150</td>
+	   	<td>民法学总论</td>
+	   	<td>学科基础课</td>
+	   	<td>3</td>
+	    <td>89</td>
+	    <td>40</td>
+	    <td>55</td>
+	   	<td>55</td>
+	   	<td>0</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1150102</td>
+	   	<td>1269</td>
+	   	<td>毛泽东思想和中国特色社会主义理论体系概论（下）</td>
+	   	<td>思想政治理论课</td>
+	   	<td>2</td>
+	    <td>88</td>
+	    <td>84</td>
+	    <td></td>
+	   	<td>86</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 2</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1000151</td>
+	   	<td>1824</td>
+	   	<td>大学生心理健康</td>
+	   	<td>文化基础课</td>
+	   	<td>1</td>
+	    <td>88</td>
+	    <td>85</td>
+	    <td></td>
+	   	<td>86</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1000141</td>
+	   	<td>--</td>
+	   	<td>军训</td>
+	   	<td>实践课程</td>
+	   	<td>1</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	   	<td>优</td>
+	   	<td>4</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GLAW180541</td>
+	   	<td>1871</td>
+	   	<td>信息素养与法律文献检索</td>
+	   	<td>法治精神和专业养成通识类</td>
+	   	<td>1</td>
+	    <td>88</td>
+	    <td>80</td>
+	    <td></td>
+	   	<td>82</td>
+	   	<td>3</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1021393</td>
+	   	<td>1989</td>
+	   	<td>法理学</td>
+	   	<td>学科基础课</td>
+	   	<td>3</td>
+	    <td>85</td>
+	    <td>81</td>
+	    <td></td>
+	   	<td>82</td>
+	   	<td>3</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1150133</td>
+	   	<td>1861</td>
+	   	<td>毛泽东思想和中国特色社会主义理论体系概论（上）</td>
+	   	<td>思想政治理论课</td>
+	   	<td>3</td>
+	    <td>100</td>
+	    <td>82</td>
+	    <td></td>
+	   	<td>91</td>
+	   	<td>4</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1083302</td>
+	   	<td>1082</td>
+	   	<td>大学英语视听说（法学类）三</td>
+	   	<td>大学英语及外语类模块课</td>
+	   	<td>2</td>
+	    <td>92</td>
+	    <td>87</td>
+	    <td></td>
+	   	<td>90</td>
+	   	<td>4</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GSEM180102</td>
+	   	<td>1826</td>
+	   	<td>人文中国</td>
+	   	<td>新生研讨和跨学科前沿讲座通识类</td>
+	   	<td>2</td>
+	    <td></td>
+	    <td>优</td>
+	    <td></td>
+	   	<td>优</td>
+	   	<td>4</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GCUL180342</td>
+	   	<td>0356</td>
+	   	<td>法古文选读</td>
+	   	<td>历史文化传承与人文素养通识类</td>
+	   	<td>2</td>
+	    <td>90</td>
+	    <td>80</td>
+	    <td></td>
+	   	<td>83</td>
+	   	<td>3.3</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1150062</td>
+	   	<td>1883</td>
+	   	<td>思想道德修养与法律基础</td>
+	   	<td>思想政治理论课</td>
+	   	<td>2</td>
+	    <td>96</td>
+	    <td>77</td>
+	    <td></td>
+	   	<td>87</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>GCUL080252</td>
+	   	<td>0975</td>
+	   	<td>西方哲学史：从泰勒斯到海德格尔</td>
+	   	<td>历史文化传承与人文素养通识类</td>
+	   	<td>2</td>
+	    <td>优</td>
+	    <td>中</td>
+	    <td></td>
+	   	<td>良</td>
+	   	<td>3.5</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1000071</td>
+	   	<td>1966</td>
+	   	<td>军事理论</td>
+	   	<td>通识教育必修课</td>
+	   	<td>1</td>
+	    <td>90</td>
+	    <td>75</td>
+	    <td></td>
+	   	<td>80</td>
+	   	<td>3</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1021403</td>
+	   	<td>2008</td>
+	   	<td>中国法律史</td>
+	   	<td>学科基础课</td>
+	   	<td>3</td>
+	    <td>90</td>
+	    <td>85</td>
+	    <td></td>
+	   	<td>87</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1140131</td>
+	   	<td>1905</td>
+	   	<td>体育一（上）</td>
+	   	<td>文化基础课</td>
+	   	<td>1</td>
+	    <td></td>
+	    <td>86</td>
+	    <td></td>
+	   	<td>86</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="grayStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1090014</td>
+	   	<td>1926</td>
+	   	<td>计算机应用基础</td>
+	   	<td>文化基础课</td>
+	   	<td>4</td>
+	    <td>89</td>
+	    <td>94</td>
+	    <td></td>
+	   	<td>93</td>
+	   	<td>4</td>
+	   	<td>2019-2020 1</td>
+</tr>
+   <tr class="brightStyle" align="center" onmouseover="swapOverTR(this,this.className)"onmouseout="swapOutTR(this)" onclick="onRowChange(event)">	   	<td>1083292</td>
+	   	<td>1349</td>
+	   	<td>英语人文经典阅读 一</td>
+	   	<td>大学英语及外语类模块课</td>
+	   	<td>2</td>
+	    <td>90</td>
+	    <td>81</td>
+	    <td></td>
+	   	<td>86</td>
+	   	<td>3.7</td>
+	   	<td>2019-2020 1</td>
+</tr>
+  </tbody>
+  </table>
+	<form name="actionForm" action="" method="post" onsubmit="return false;">
+	</form>
+	<script type="text/javascript">
+	   var form =document.actionForm;
+	    function gradeList(){
+	       
+	       form.submit();
+	    }
+	    var bar=new ToolBar("gradeBar","学生个人成绩查询",null,true,true);
+	    bar.addHelp("帮助");
+	</script> 
+</body>
+</HTML> 
+					</div>
+					
+					
+					
+					
+					<iframe HEIGHT="100%" WIDTH="100%" SCROLLING="auto" FRAMEBORDER="0" src="javascript:;" name="main" id="main">
+     
+					
+					
+					</iframe>
+				</td>
+			</tr>
+		</table>
+
+		<script type="text/javascript">
+			var menus = {
+				"domain": {
+					"name": "edu",
+					"id": 5,
+					"title": "教学"
+				},
+				"groups": [{
+					"appMenus": [{
+						"app": {
+							"name": "edu-eams",
+							"id": 2,
+							"title": "教务管理",
+							"url": "#",
+							"base": "#",
+							"navStyle": "beangle-struts-s1"
+						},
+						"menus": [{
+							"children": [{
+								"children": [{
+									"#": "/publicTeachTaskSearch.do",
+									"indexno": "01.02.04",
+									"id": 450,
+									"title": "全校任务"
+								}],
+								"indexno": "01.02",
+								"id": 66,
+								"title": "教学任务"
+							}],
+							"indexno": "01",
+							"id": 1,
+							"title": "教学管理"
+						}, {
+							"children": [{
+								"children": [{
+									"#": "/stdTeachPlanInfo.do?method=stdPlanInfo",
+									"indexno": "10.1.2",
+									"id": 377,
+									"title": "个人计划"
+								}, {
+									"#": "/auditOperationByStudent.do?method=detail&termsShow=true&showBackward=false&showStudent=false",
+									"indexno": "10.1.3",
+									"id": 378,
+									"title": "计划完成"
+								}],
+								"indexno": "10.1",
+								"id": 375,
+								"title": "培养计划"
+							}, {
+								"children": [{
+									"#": "/electCourse.do?method=prompt",
+									"indexno": "10.2.01",
+									"id": 380,
+									"title": "选课"
+								}, {
+									"#": "#",
+									"indexno": "10.2.02",
+									"id": 381,
+									"title": "我的课表"
+								}, {
+									
+									"title": "我的成绩"
+								}, {
+									"#": "/textbookOrder.do",
+									"indexno": "10.2.05",
+									"id": 1351,
+									"title": "教材查询"
+								}, {
+									"#": "/personOtherExam.do",
+									"indexno": "10.2.06",
+									"id": 387,
+									"title": "其他考试"
+								}, {
+									"#": "/evaluateStd.do",
+									"indexno": "10.2.07",
+									"id": 388,
+									"title": "评  教"
+								}, {
+									"#": "/courseAbilityApply.do",
+									"indexno": "10.2.10",
+									"id": 1174,
+									"title": "英语升降级申请"
+								}, {
+									"#": "/placeTake.do",
+									"indexno": "10.2.11",
+									"id": 1246,
+									"title": "基地选择"
+								}, {
+									"#": "/minorCourseGrade.do",
+									"indexno": "10.2.12",
+									"id": 1667,
+									"title": "校内辅修成绩"
+								}],
+								"indexno": "10.2",
+								"id": 379,
+								"title": "课程管理"
+							}, {
+								"children": [{
+									"#": "/stdDetail.do",
+									"indexno": "10.3.01",
+									"id": 392,
+									"title": "个人信息"
+								}, {
+									"#": "/studentClassDetail.do?method=detailByStudent",
+									"indexno": "10.3.02",
+									"id": 393,
+									"title": "班级信息"
+								}, {
+									"#": "/alterationForStd.do",
+									"indexno": "10.3.04",
+									"id": 395,
+									"title": "学籍异动"
+								}, {
+									"#": "/speciality2ndSignUp.do",
+									"indexno": "10.3.05",
+									"id": 396,
+									"title": "辅修报名"
+								}, {
+									"#": "/exchangeSignUp.do",
+									"indexno": "10.3.06",
+									"id": 1542,
+									"title": "交换生报名"
+								}, {
+									"#": "/specialityAlerationApplicaton.do",
+									"indexno": "10.3.08",
+									"id": 846,
+									"title": "转专业申请"
+								}, {
+									"#": "/exemptionApply.do",
+									"indexno": "10.3.09",
+									"id": 1235,
+									"title": "推免申请"
+								}, {
+									"#": "/gradeAchivementStd.do",
+									"indexno": "10.3.10",
+									"id": 1317,
+									"title": "综合测评"
+								}, {
+									"#": "/bursaryApply.do",
+									"indexno": "10.3.11",
+									"id": 1318,
+									"title": "社会奖助学金申请"
+								}],
+								"indexno": "10.3",
+								"id": 391,
+								"title": "学籍信息"
+							}, {
+								"children": [{
+									"#": "/stdThesisSso.do",
+									"indexno": "10.5.1",
+									"id": 1153,
+									"title": "毕业论文系统"
+								}],
+								"indexno": "10.5",
+								"id": 1152,
+								"title": "实践课程"
+							}],
+							"indexno": "10",
+							"id": 1538,
+							"title": "我的学习"
+						}, {
+							"children": [{
+								"#": "/publicTeachTaskSearch.do",
+								"indexno": "11.1",
+								"id": 437,
+								"title": "全校课程"
+							}, {
+								"#": "/publicRoomResource.do",
+								"indexno": "11.2",
+								"id": 440,
+								"title": "教室占用查询"
+							}],
+							"indexno": "11",
+							"id": 844,
+							"title": "统计查询"
+						}]
+					}],
+					"group": {
+						"indexno": "1",
+						"name": "teach",
+						"id": 3,
+						"title": "教务管理"
+					}
+				}]
+			}
+
+			if((typeof menus) == "object") {
+				menus = menus.groups[0].appMenus[0].menus;
+			}
+			var apps = [{
+				"name": "#",
+				"id": 2,
+				"title": "教务管理",
+				"url": "#",
+				"base": "#",
+				"group": {
+					"name": "teach",
+					"id": 3,
+					"title": "教务管理"
+				},
+				"navStyle": "beangle-struts-s1"
+			}, {
+				"name": "edu-program-studentapp",
+				"id": 22,
+				"title": "我的方案",
+				"url": "{webapp}/edu/program/student/",
+				"base": "{webapp}/edu/program/student",
+				"group": {
+					"name": "teach",
+					"id": 3,
+					"title": "教务管理"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "edu-extern-webapp",
+				"id": 33,
+				"title": "校外成绩",
+				"url": "{webapp}/edu/extern",
+				"base": "{webapp}/edu/extern",
+				"group": {
+					"name": "teach",
+					"id": 3,
+					"title": "教务管理"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "edu-llc-webapp",
+				"id": 24,
+				"title": "外语学习中心",
+				"url": "{webapp}/edu/llc/",
+				"base": "{webapp}/edu/llc/",
+				"group": {
+					"name": "teach",
+					"id": 3,
+					"title": "教务管理"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "edu-exam-studentapp",
+				"id": 17,
+				"title": "我的考试",
+				"url": "{webapp}/edu/exam/student/home.action",
+				"base": "{webapp}/edu/exam/student",
+				"group": {
+					"name": "teach",
+					"id": 3,
+					"title": "教务管理"
+				},
+				"navStyle": "beangle-struts-s2"
+			}, {
+				"name": "std-registration-webapp",
+				"id": 40,
+				"title": "报到注册",
+				"url": "{webapp}/std/registration",
+				"base": "{webapp}/std/registration",
+				"group": {
+					"name": "std",
+					"id": 8,
+					"title": "学籍管理"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "std-transfer-webapp",
+				"id": 41,
+				"title": "转专业",
+				"url": "{webapp}/std/transfer/",
+				"base": "{webapp}/std/transfer",
+				"group": {
+					"name": "std",
+					"id": 8,
+					"title": "学籍管理"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "std-graduation-webapp",
+				"id": 36,
+				"title": "毕业信息",
+				"url": "{webapp}/std/graduation",
+				"base": "{webapp}/std/graduation",
+				"group": {
+					"name": "std",
+					"id": 8,
+					"title": "学籍管理"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "qos-evaluation-courseapp",
+				"id": 31,
+				"title": "课程评教",
+				"url": "{webapp}/qos/evaluation/",
+				"base": "{webapp}/qos/evaluation/",
+				"group": {
+					"name": "qos",
+					"id": 11,
+					"title": "教学质量"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "prac-innovation-webapp",
+				"id": 20,
+				"title": "大创平台",
+				"url": "{webapp}/prac/innovation",
+				"base": "{webapp}/prac/innovation",
+				"group": {
+					"name": "prac",
+					"id": 7,
+					"title": "实践教学"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "prac-la-webapp",
+				"id": 25,
+				"title": "法律助理",
+				"url": "{webapp}/prac/la/index",
+				"base": "{webapp}/prac/la",
+				"group": {
+					"name": "prac",
+					"id": 7,
+					"title": "实践教学"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "spa-webapp",
+				"id": 30,
+				"title": "自助打印",
+				"url": "{webapp}/spa/",
+				"base": "{webapp}/spa/",
+				"group": {
+					"name": "spa",
+					"id": 9,
+					"title": "自助服务"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}, {
+				"name": "platform-portal",
+				"id": 4,
+				"title": "系统维护",
+				"url": "https://jwxt.ecupl.edu.cn/portal",
+				"base": "https://jwxt.ecupl.edu.cn/portal",
+				"group": {
+					"name": "platform",
+					"id": 1,
+					"title": "系统管理"
+				},
+				"navStyle": "beangle-webui-bootstrap"
+			}]
+
+			for(var i = 0; i < apps.length; i++) {
+				var app = apps[i];
+				if(app.url) {
+					app.url = app.url.replace("{webapp}", "{openurp.webapp}");
+				}
+			}
+			var urpNav = new UrpNav('edu-eams', apps, menus, 'https://jwxt.ecupl.edu.cn', '/edu/eams');
+
+			function displayMenus(idx) {
+				urpNav.displayTopMenus(idx);
+			}
+			urpNav.init();
+
+			jQuery("ul.menu li a.p_1").click(function() {
+				jQuery("ul.menu li.current").removeClass('current');
+				jQuery(this).parent('li').addClass('current');
+			});
+
+			jQuery(function() {
+				jQuery('#_menu_folder_tri').addClass('arrow-left');
+				jQuery('#_menu_folder').click(function() {
+					jQuery('#leftTD').toggle(200);
+					var jq_tri = jQuery('#_menu_folder_tri');
+					if(jq_tri.hasClass('arrow-left')) {
+						jq_tri.removeClass('arrow-left');
+						jq_tri.addClass('arrow-right');
+					} else {
+						jq_tri.removeClass('arrow-right');
+						jq_tri.addClass('arrow-left');
+					}
+				});
+			});
+
+			function f_frameStyleResize(targObj, extraHight) {
+				if(targObj && targObj.name != "") {
+					var frames = targObj.parent.document.getElementsByName(targObj.name);
+					if(frames.length < 1) return;
+					var targWin = frames[0];
+					if(targWin != null) {
+						var HeightValue = targObj.document.body.scrollHeight;
+						if(null == extraHight) {
+							extraHight = 0;
+						}
+						targWin.style.height = (HeightValue + extraHight) + "px";
+					}
+					targObj.parent.f_frameStyleResize(targObj.parent);
+				}
+			}
+
+			function openNotice(id) {
+				layer.open({
+					type: 2,
+					title: '重要通知',
+					maxmin: true,
+					area: ['800px', '500px'],
+					scrollbar: true,
+					content: 'noticeSearch.do?method=info&notice.id=' + id
+				});
+			}
+		</script>
+
+	</body>
+
+</html>
